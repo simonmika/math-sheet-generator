@@ -1,0 +1,25 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "csv",
+			"type": "node",
+			"request": "launch",
+			"program": "${workspaceRoot}/build/app.js",
+			"stopOnEntry": false,
+			"args": ["sum10", "sum10.csv"],
+			"cwd": "${workspaceRoot}",
+			"preLaunchTask": "build",
+			"runtimeExecutable": null,
+			"runtimeArgs": [
+				"--nolazy"
+			],
+			"env": {
+				"NODE_ENV": "development"
+			},
+			"externalConsole": false,
+			"sourceMaps": true,
+			"outDir": "${workspaceRoot}/build"
+		}
+	]
+}
