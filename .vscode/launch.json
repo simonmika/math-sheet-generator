@@ -20,6 +20,46 @@
 			"externalConsole": false,
 			"sourceMaps": true,
 			"outDir": "${workspaceRoot}/build"
+		},
+		{
+			"name": "html",
+			"type": "node",
+			"request": "launch",
+			"program": "${workspaceRoot}/build/app.js",
+			"stopOnEntry": false,
+			"args": ["sum10", "sum10.html"],
+			"cwd": "${workspaceRoot}",
+			"preLaunchTask": "build",
+			"runtimeExecutable": null,
+			"runtimeArgs": [
+				"--nolazy"
+			],
+			"env": {
+				"NODE_ENV": "development"
+			},
+			"externalConsole": false,
+			"sourceMaps": true,
+			"outDir": "${workspaceRoot}/build"
+		},
+		{
+			"name": "pdf",
+			"type": "node",
+			"request": "launch",
+			"program": "${workspaceRoot}/build/app.js",
+			"stopOnEntry": false,
+			"args": ["sum10", "sum10.pdf", "3"],
+			"cwd": "${workspaceRoot}",
+			"preLaunchTask": "build",
+			"runtimeExecutable": null,
+			"runtimeArgs": [
+				"--nolazy"
+			],
+			"env": {
+				"NODE_ENV": "development"
+			},
+			"externalConsole": false,
+			"sourceMaps": true,
+			"outDir": "${workspaceRoot}/build"
 		}
 	]
 }

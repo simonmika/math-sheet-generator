@@ -2,6 +2,8 @@ import { Generator } from './Generator'
 import { Output } from './Output'
 
 import './CsvOutput'
+import './HtmlOutput'
+import './PdfOutput'
 import './SumGenerator'
 
 export class Program {
