@@ -5,6 +5,7 @@ import './CsvOutput'
 import './HtmlOutput'
 import './PdfOutput'
 import './SumGenerator'
+import './MinusGenerator'
 
 export class Program {
 	constructor() { }

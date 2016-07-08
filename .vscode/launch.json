@@ -47,7 +47,7 @@
 			"request": "launch",
 			"program": "${workspaceRoot}/build/app.js",
 			"stopOnEntry": false,
-			"args": ["sum10", "sum10.pdf", "3"],
+			"args": ["sum10+10minus", "sum10minus.pdf", "10"],
 			"cwd": "${workspaceRoot}",
 			"preLaunchTask": "build",
 			"runtimeExecutable": null,
