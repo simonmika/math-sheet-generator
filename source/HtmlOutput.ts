@@ -9,7 +9,7 @@ export class HtmlOutput extends Output {
 	generate(generator: Generator, outputPath: string, count?: number) {
 		if (!count)
 			count = 1
-		count *= 22
+		count *= 20
 		this.save(outputPath,
 			`<!doctype html>
 <html>
@@ -30,11 +30,14 @@ export class HtmlOutput extends Output {
 				margin: 0;
 			}
 			section {
-				width: 49%;
+				width: 48%;
 				border: solid 1px black;
 				display: inline-block;
 				text-align: center;
-				margin-bottom: 1mm;
+				margin-bottom: 5mm;
+			}
+			section:nth-child(odd) {
+				margin-right: 4mm;
 			}
 			section > math {
 				display: inline-block;
